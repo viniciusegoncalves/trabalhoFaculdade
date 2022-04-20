@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      #centro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="width: 500px" id="centro">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="first_name" type="text" class="validate" />
+              <label for="first_name">Nome Completo</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="cpf" type="text" class="validate" placeholder="xxx.xxx.xxx-xx" minlength="11" maxlength="11"/>
+          <label for="cpf">CPF</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="dataNascimento" type="date" class="validate">
+          <label for="dataNascimento">Data de Nascimento</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input
+            id="telefone"
+            type="tel"
+            class="validate"
+            required
+            placeholder="(xx) xxxxx-xxxx"
+            minlength="11"
+            maxlength="11"
+          />
+          <label for="telefone">telefone</label>
+        </div>
+        <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Genero</option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+            <option value="3">Outros</option>
+          </select>
+          <label>Gênero</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label for="email">Email</label>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="input-field col s6">
+          <input
+            id="password"
+            type="password"
+            class="validate"
+            minlength="8"
+            maxlength="20"
+          />
+          <label for="password">Senha</label>
+        </div>
+        <div class="input-field col s6">
+          <input
+            id="passwordValidate"
+            type="password"
+            class="validate"
+            minlength="8"
+            maxlength="20"
+          />
+          <label for="passwordValidate">Repita a senha</label>
+        </div>
+      </div>
+      <div style="text-align: right">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+        </button>
+      </div>
+        </form>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
